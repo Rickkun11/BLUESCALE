@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="
+            position: fixed; 
+            width: 100%;
+            height: fit-content;    
+            font-size: 3vw; 
+            opacity: 0.8;
+            background-color: #0A192F;
+            top: 0;
+            float:left;
+            z-index: 1;
+        ">  
+
+        <!-- logo -->
+        <span style="
+            float: left;    
+            font-size: 3vw;
+            width: fit-content;
+            margin: 1vw 0 0 3vw ;
+            color: #64FFDA;
+            
+        ">BLUE</span><span style="
+            float: left;    
+            font-size: 3vw;
+            width: fit-content;
+            margin: 1vw 0vw 0vw 0vw;
+            color: #CCD6F6;
+            
+        ">Scale</span>
+            
+        <!-- Navigation -->
+        <div style="float: right; margin: 2% 4vw; width: fit-content;font-size:1.5vw ; z-index: 1;">
+            <!-- link Home -->
+            
+            <a href="/index.html" style="
+                color: #64FFDA;
+            ">1.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Home</span></a>
+            
+            <!-- Link Gallery-->
+            <a href="/gallery.html" style="
+                color: #64FFDA;
+            ">2.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Gallery</span></a>
+
+            <!--Link Contact-->
+            <a href="/contact.html" style="
+                color: #64FFDA;
+            ">3.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Contact</span></a>
+        </div>
+
+    </header>
+
+    <!-- judul -->
+    <div style="
+        position: absolute; 
+        float:left; 
+        display: flex;
+        margin: 5.8vw 0vw 0vw 6vw; 
+        height: fit-content; 
+        width: fit-content ;
+        left: 1vw;
+        top: 5.3vw;
+        ">
+
+            <div style="
+                display:flex; 
+                flex-direction: row; 
+                justify-content: left; 
+                font-size: 3.6vw; 
+                color: #64FFDA; 
+                height: fit-content;
+                width: fit-content;">
+                
+                <span style="display: flex; flex-direction: column;">.CONTACT </span>       
+                    <span style="
+                        display: flex; 
+                        flex-direction: row; 
+                        color: #CCD6F6; 
+                        margin: 0.6vw 0 0 0.9vw; 
+                        font-size: 2.9vw;">all my info
+                    </span>
+                </span>
+            </div>
+    </div>
+
+    <div style="
+        position: absolute; 
+        float:left; 
+        display: flex;
+        margin: 5.8vw 0vw 0vw 6vw; 
+        height: fit-content; 
+        width: fit-content ;
+        left: 1vw;
+        top: 10.3vw;
+        ">
+        
+        <form style="color:#CCD6F6; font-size: 1.4vw;">  
+
+            <br><label for="text" style="position: absolute;" >Subject</label>
+            <input type="text" id="sub"  style="padding:0; margin:0 6.5vw 2vw 6.9vw; width: 30vw; height: 3vw;">
+
+            <br><label for="area" style="margin:5vw 1vw 0 0vw;">Message</label>
+            
+            <br><textarea id="myText" name="area" rows="1" cols="50" 
+                style=" 
+                    display:flex; 
+                    flex-direction: row; 
+                    width: 29.7vw; 
+                    height: 5vw; 
+                    margin: -1.5vw 0 0 7vw"></textarea>
+            
+
+            <br><span style="position: absolute;">Email</span>
+            <input type="text" style="position: absolute; padding:0; margin-left:6.9vw; width: 30vw; height: 3vw;">
+            
+            <!--Function send email-->
+            <script>
+                function sendMail() {
+                var link = "mailto:rickkun11@gmail.com"
+                + "?cc=me"
+                + "&subject=" + encodeURIComponent(document.getElementById('sub').value)
+                + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+                    
+                window.location.href = link;
+            }
+            </script>
+            
+            <br><input type="Button" value="Submit" onclick="sendMail(); return false"
+                style="
+                    position: absolute; 
+                    padding:0; 
+                    margin: 4vw 0 0 23.2vw; 
+                    width: 14vw; 
+                    height: 3vw;
+                    background-color:#0A192F;
+                    font-size:1vw ;
+                    color: #64FFDA;
+                    border-color: #64FFDA;
+                    ">
+        </form>
+    </div>
+
+    <div style="
+        display: flex;
+        top: 5.3vw;
+        margin: 10.8vw 14vw 0vw 6vw; 
+        float: right;    
+            font-size: 3vw;
+            width: fit-content;
+            color: #CCD6F6;
+        ">
+        My Own Social media
+    </div>
+
+    <div style="
+        display: flex;
+        top: 5.3vw;
+        margin: 3vw 48vw 0vw 0vw; 
+        float: right;    
+            font-size: 1vw;
+            width: fit-content;
+            height: 17.2vw;
+            color: #CCD6F6;
+        ">
+
+        <div style="display: flex; flex-direction: column;filter: invert(100%);"> 
+            <img name="img1" src="https://i.postimg.cc/RZ6ChtZ7/vimeo-square-brands.png" alt="" style="width:3.22vw; height:3.22vw ; margin: -0.3vw 0 0 0 ;">
+            <img name="img2" src="https://i.postimg.cc/0QqyLNxp/envelope-square-solid.png" alt="" style="width:3.22vw; height:3.22vw ; margin: 2.5vw 0 0 0 ;">
+            <img name="img2" src="https://i.postimg.cc/yd9SZ56T/twitter-square-brands.png" alt="" style="width:3.22vw; height:3.22vw ; margin: 2.5vw 0 0 0 ;">
+        </div>
+        <div style="
+        
+        display: flex;
+        flex-direction: column;
+        top: 5.3vw;
+        margin: 1vw -28vw 0vw 2vw; 
+        float: right;    
+        font-size: 1.2vw;
+        width: fit-content;
+        height: 17.2vw;
+        text-decoration: none;
+        ">
+        <a href="https://vimeo.com/rickkun11" style="color: #CCD6F6;text-decoration: none ;margin: 0.1vw 0 0 0 ;">https://vimeo.com/Rickkun11</a>
+        <a href="https://gmail.com/rickkun11" style="color: #CCD6F6;text-decoration: none ;margin: 4.3vw 0 0 0 ;">https://gmail.com/Rickkun11</a>
+        <a href="https://twitter.com/rickkun11" style="color: #CCD6F6;text-decoration: none ;margin: 4.3vw 0 0 0 ;">https://twitter.com/Rickkun11</a>
+        </div> 
+    </div>
+    
+    <!--footer-->
+    <div style="
+        position: absolute;
+        display: flex;
+        color:#64FFDA;
+        font-size: 2.46vw;
+        margin: 42.4vw 0vw 0vw 0vw; 
+        height: 6vw; 
+        width: 100% ;
+        justify-content: center;
+    ">
+    <h1>ALL DONE</h1>
+    <div style="
+        position: absolute;
+        display: flex;
+        color:#CCD6F6;
+        font-size: 1.2vw;
+        margin: 8vw 0vw 0vw 0vw; 
+        height: 6vw; 
+        width: 100% ;
+        justify-content: center;
+    ">
+    <p>This Last Page</p>
+
+    <div style="
+        position: absolute;
+        display: flex;
+        margin: 5vw 0vw 0vw 0vw; 
+        height: 6vw; 
+        width: 100% ;
+        justify-content: center;
+        font-size: 1.2vw;
+        ">
+        <br>© 2022 Riky
+        
+    </div> 
+
+    </div>
+</body>
+</html>
