@@ -2,8 +2,114 @@
 <html lang="en">
 <head>
     <title>Galery</title>
-    <link rel="stylesheet" href="/assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (min-width: 300px) {
+    body {
+        background-color: #0A192F;
+        font-family: 'Lucida Console';
+        color: #CCD6F6;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        font-size: 3vw;
+        opacity: 0.8;
+        background-color: #0A192F;
+        top: 0;
+        float: left;
+        z-index: 1;
+    }
+
+    header #logo1 {
+        float: left;
+        font-size: 3vw;
+        width: fit-content;
+        margin: 1vw 0 0 3vw;
+        color: #64FFDA;
+
+    }
+
+    header #logo2 {
+        float: left;
+        font-size: 3vw;
+        width: fit-content;
+        margin: 1vw 0vw 0vw 0vw;
+        color: #CCD6F6;
+
+    }
+
+    header #navigation {
+        float: right;
+        margin: 2% 4vw;
+        width: fit-content;
+        font-size: 1.5vw;
+        z-index: 1;
+    }
+
+    header #navigation a {
+        color: #64FFDA;
+    }
+
+    header #navigation span {
+        color: #CCD6F6;
+        text-decoration-line: underline;
+        margin-right: 4vw;
+
+    }
+
+    /*main*/
+
+    main {
+        float: left;
+        margin: 10vw 0 0 5vw;
+    }
+
+    main p {
+        margin-left: 0.2vw;
+        font-size: 1.2vw;
+
+    }
+
+    main h1 {
+        margin: 0;
+        color: #64ffda;
+        font-size: 5vw;
+    }
+
+    main h2 {
+        margin: 0;
+        font-size: 3vw;
+        color: #ccd6f6;
+    }
+
+    main #skilled {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2vw;
+        color: #8892b0;
+    }
+
+    main #skilled h6 {
+        margin-right: 2vw;
+        color: #64ffda;
+    }
+
+    main #button-cv {
+        font-size: 1.2vw;
+        border: solid 0.1vw #64ffda;
+        color: #64ffda;
+        width: fit-content;
+        padding: 1vw 3vw;
+        margin-bottom: 15vw;
+    }
+
+}
+    </style>
 </head>
 
 <body>
@@ -37,17 +143,17 @@
         <!-- Navigation -->
         <div style="float: right; margin: 2% 4vw; width: fit-content;font-size:1.5vw ; ">
             <!-- link Home -->
-            <a href="/index.html" style="
+            <a href="./index.html" style="
                 color: #64FFDA;
             ">1.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Home</span></a>
             
             <!-- Link Gallery-->
-            <a href="/gallery.html" style="
+            <a href="./gallery.html" style="
                 color: #64FFDA;
             ">2.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Gallery</span></a>
 
             <!--Link Contact-->
-            <a href="/contact.html" style="
+            <a href="./contact.html" style="
                 color: #64FFDA;
             ">3.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Contact</span></a>
         </div>
@@ -97,26 +203,23 @@
             ">
         <!-- image row 1 -->       
         <div id="image" style="height:fit-content;">
-                <img src="https://i.postimg.cc/8cPJCc6W/galery-9.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;" >
-                <img src="https://i.postimg.cc/sXzGtwfT/galery-8.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;">
-                <img src="https://i.postimg.cc/qRG60yz4/galery-7.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;">
+                <img src="./assets/bio/1.jpg" alt="1" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;" >
+                <img src="./assets/bio/2.jpg" alt="2" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;">
+                <img src="./assets/bio/3.jpg" alt="3" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw; overflow: hidden;">
 
         </div>
         <!-- image row 2 -->       
         <div style="height:fit-content;
                 margin: 0.5vw;">
-            
-                <img src="https://i.postimg.cc/xTpHcvgd/galery-5.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
-            
-                <img src="https://i.postimg.cc/Dfg1KkXL/galery-4.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
-            
+                <img src="./assets/bio/4.jpg" alt="4" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
+                <img src="./assets/bio/5.jpg" alt="5" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
         </div>
         <!-- image row 3 -->       
         <div style="height:fit-content;
                 ">
-                <img src="https://i.postimg.cc/X7YdjHfh/galery-2.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
-                <img src="https://i.postimg.cc/B6JthbNy/galery-11.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
-                <img src="https://i.postimg.cc/BvTXcH5H/galery-12.jpg" alt="" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
+                <img src="./assets/bio/6.jpg" alt="6" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
+                <img src="./assets/bio/7.jpg" alt="7" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
+                <img src="./assets/bio/8.jpg" alt="8" style="display:inline-block;width: 28vw;height: 19vw;margin: 0.5vw;overflow: hidden;">
             </div>
         </div>
 
