@@ -1,114 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>Personal Portofolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @media screen and (min-width: 300px) {
+    body {
+        background-color: #0A192F;
+        font-family: 'Lucida Console';
+        color: #CCD6F6;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        font-size: 3vw;
+        opacity: 0.8;
+        background-color: #0A192F;
+        top: 0;
+        float: left;
+        z-index: 1;
+    }
+
+    header #logo1 {
+        float: left;
+        font-size: 3vw;
+        width: fit-content;
+        margin: 1vw 0 0 3vw;
+        color: #64FFDA;
+
+    }
+
+    header #logo2 {
+        float: left;
+        font-size: 3vw;
+        width: fit-content;
+        margin: 1vw 0vw 0vw 0vw;
+        color: #CCD6F6;
+
+    }
+
+    header #navigation {
+        float: right;
+        margin: 2% 4vw;
+        width: fit-content;
+        font-size: 1.5vw;
+        z-index: 1;
+    }
+
+    header #navigation a {
+        color: #64FFDA;
+    }
+
+    header #navigation span {
+        color: #CCD6F6;
+        text-decoration-line: underline;
+        margin-right: 4vw;
+
+    }
+
+    /*main*/
+
+    main {
+        float: left;
+        margin: 10vw 0 0 5vw;
+    }
+
+    main p {
+        margin-left: 0.2vw;
+        font-size: 1.2vw;
+
+    }
+
+    main h1 {
+        margin: 0;
+        color: #64ffda;
+        font-size: 5vw;
+    }
+
+    main h2 {
+        margin: 0;
+        font-size: 3vw;
+        color: #ccd6f6;
+    }
+
+    main #skilled {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2vw;
+        color: #8892b0;
+    }
+
+    main #skilled h6 {
+        margin-right: 2vw;
+        color: #64ffda;
+    }
+
+    main #button-cv {
+        font-size: 1.2vw;
+        border: solid 0.1vw #64ffda;
+        color: #64ffda;
+        width: fit-content;
+        padding: 1vw 3vw;
+        margin-bottom: 15vw;
+    }
+
+}
+    </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header style="
-            position: fixed; 
-            width: 100%;
-            height: fit-content;    
-            font-size: 3vw; 
-            opacity: 0.8;
-            background-color: #0A192F;
-            top: 0;
-            float:left;
-            z-index: 1;
-        ">
+    <header>
         <!-- logo -->
-        <span style="
-            float: left;    
-            font-size: 3vw;
-            width: fit-content;
-            margin: 1vw 0 0 3vw ;
-            color: #64FFDA;
-            
-        ">BLUE</span><span style="
-            float: left;    
-            font-size: 3vw;
-            width: fit-content;
-            margin: 1vw 0vw 0vw 0vw;
-            color: #CCD6F6;
-            
-        ">Scale</span>
+        <span id="logo1">BLUE</span>
+        <span id="logo2">Scale</span>
         
         <!-- Navigation -->
-        <aside style="float: right; margin: 2% 4vw; width: fit-content;font-size:1.5vw ; z-index: 1;">
+        <div id="navigation">
             <!-- link Home -->
-            
-            <a href="./index.html" style="
-                color: #64FFDA;
-            ">1.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Home</span></a>
-            
+            <a href="./index.html" >1.<span>Home</span></a>
             <!-- Link Gallery-->
-            <a href="./gallery.html" style="
-                color: #64FFDA;
-            ">2.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Gallery</span></a>
-
+            <a href="./gallery.html">2.<span>Gallery</span></a>
             <!--Link Contact-->
-            <a href="./contact.html" style="
-                color: #64FFDA;
-            ">3.<span style="color: #CCD6F6; text-decoration-line: underline; margin-right: 4vw;">Contact</span></a>
-        </aside>
-
+            <a href="./contact.html">3.<span>Contact</span></a>
+        </div>
     </header>
 
-    <!-- judul -->
-    <div style="
-        position: absolute; 
-        float:left; 
-        display: flex;
-        margin: 5.8vw 0vw 0vw 6vw; 
-        height: fit-content; 
-        width: fit-content ;
-        left: 1vw;
-        top: 5.3vw;
-        ">
+    <!-- Introduce -->
+    <main>
+        <p> Hello I'm . </p>
+        <h1>Muchamad RF.</h1>
+        <h2>Web Developer Portofolio </h2>
+        <p style="margin: 1vw 0 0 0; font-size: 1.2vw; width: 80%; line-height: 1.9vw; ">
+            I'm a Developer from Indonesia which is great , with 16 years experience
+            <br>pentesting a system with my method I helped bring Rapture to life in the critically 
+            <br>acclaimed BioShock series, and made the world dance as design lead on Dance Central. 
+            Most recently I sparked the joy of childhood imagination and creativity
+        </p>
+
+        <div id="skilled">
+        <h6> 1.Front-End Developer </h6>
+        <h6> 2.Back-End Developer </h6>
+        <h6> 3.Devops Developer </h6>
+        </div>
+
+        <div id="button-cv">
+        <a href="https://drive.google.com/file/d/17B_tCSdjowYaffzI9iQaTr-NHYgQnk7v/view?usp=sharing" style="text-decoration: none; color: #64FFDA;"> Curiculum Vitae </a>
+        </div>
+    </main>
+
+    <!-- About Me -->
+    <aside  style="margin-left: 5vw; margin-bottom: 15vw; padding: 0; line-height: 1.9vw;">
         
-        <div style="display:flex; flex-direction: column; justify-content: left; font-size: 5.8vw; color: #64FFDA;">
-            <span>.CERTIFICATE</span>
-            <p style="color: #64FFDA; margin: 0;">MY OWN</p>
+        <!--Title About Me-->
+        <h2 style="font-size: 2.6vw; padding-bottom: 1vw;">
+            <span style="color: #64ffda; float: left;
+            ">1.</span><span style="color: #ccd6f6; float: left;">About Me</span>
+            <div style="
+                float: left;
+                border-top: 1px solid #ccd6f6;
+                height: 2px;
+                width : 50vw;
+                margin: 1.25% 1%;
+                ">
+            </div>
+        </h2>
+
+        <!-- Photo Profile -->
+        <div style="
+            float: right;
+            margin-right: 5vw;
+            width: 28vw;
+            height: 28vw;
+            outline: 0.3vw solid #64ffda;
+            outline-offset: -2vw;
+        ">
+            <img style="
+            object-fit: cover;
+            object-position: top;
+            height: 25vw;
+            width: 25vw;
+            position: relative;
+        " src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/small/avatar/dos:c1ebde331c71993413ca9bf993c1c7bc20211215114525.png" alt="profile">
+        </div>
+
+        <!-- Content -->
+        <p style="margin: 0; font-size: 1.1vw; width: 50%; line-height: 1.9vw; ">
+            I'm a new emerging developer with 2 years of experience in programming, 
+            some of this I have the following experience you can see as well as 
+            some solo projects I've worked on over the past few years
+            <br>
+    
+            <br><span>
+                some of my experience in coding I learned a few things and also some markup languages ​
+                ​to be interactive as follows</span>
+            <ul style="margin: 0; font-size: 1.1vw">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+        </p>
+    </aside>
+
+    <!-- Project -->
+    <div style="margin: 0 0 15vw 5vw">
+
+        <!-- Title Project -->
+        <h2 style="font-size: 2.6vw; padding-bottom: 2vw;">
+            <span style="color: #64ffda; float: left;
+            ">2.</span><span style="color: #ccd6f6; float: left;">Project</span>
+            <div style="
+                float: left;
+                border-top: 1px solid #ccd6f6;
+                height: 2px;
+                width : 60vw;
+                margin: 1.25% 1%;
+                ">
+            </div>
+        </h2>
+        
+
+        <!-- Table Project -->
+        <div style="
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 2vw;
+            width: 30vw;
+        ">
+
+            <!-- Table 1 -->
+            <div style="
+                background-color: #112240;
+                color: #ccd6f6;
+                margin-right: 1vw;
+                width: 27vw;
+            ">
+
+                <!-- Logo 1 -->
+                <img style="
+                float: left;
+                padding: 0.7vw 15vw 1vw 1.5vw;
+                width: 2vw;
+                height: 2vw;
+                filter: invert(82%) sepia(37%) saturate(569%)
+                        hue-rotate(103deg) brightness(102%) contrast(101%);"
+                src="https://i.postimg.cc/d0Phy4CJ/folder-solid.png" alt="folder-icon">
+
+                <!-- Logo 2 -->
+                <img style="
+                    float: right;
+                    padding: 0.7vw 1.5vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/0yJ6jLbt/bitbucket-brands.png" alt="bitbucket">
+
+                <!-- Logo 3 -->
+                <img style="
+                    float: right;
+                    color: #ccd6f6;
+                    padding: 0.8vw 1vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/5NyQdH1W/gitlab-brands.png" alt="gitlab">
+
+                <!-- Title Content -->
+                <h4 style="
+                    float: left;
+                    color: #ccd6f6;
+                    margin-top: 0;
+                    padding-left: 1.5vw;
+                    font-size: 2vw;
+                    margin-bottom: 0;
+                ">
+                Magnews-integration-with-Igniter-
+                
+                </h4>
+
+                <!-- Content -->
+                <p style="
+                    float: left;
+                    font-size: 1.2vw;
+                    line-height: 2vw;
+                    margin: 1.5vw 6vw 46px 1.5vw;
+                    width: 19vw;
+                ">
+                Honestly, I once made a theme integration with igniter.
+                </p>
+
+                <!-- Type -->
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 0.6vw 0vw 3vw 1.5vw;">PHP</span>
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 0.6vw 0vw 3vw 1.5vw">HTML</span>
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 0.6vw 0vw 3vw 1.5vw">CSS</span>
+            </div>
             
-            <p style="display:flex; color: #CCD6F6; margin: 0;font-size:3vw ;width:fit-content; ">CLASSY
-                <span style="color: #CCD6F6; margin: 0.3vw 0 0 0.3vw; font-size:1.2vw; width:fit-content;">
-                        Howdy How im Get This Certificate?
-                    <br>Lmao You Just Learn And Buy Class
-                </span> 
-            </p>
+            <!-- Table 2 -->
+            <div style="
+                background-color: #112240;
+                color: #ccd6f6;
+                margin-right: 1vw;
+                width: 27vw;
+            ">
+
+                <!-- Logo 1 -->
+                <img style="
+                float: left;
+                padding: 0.7vw 15vw 1vw 1.5vw;
+                width: 2vw;
+                height: 2vw;
+                filter: invert(82%) sepia(37%) saturate(569%)
+                        hue-rotate(103deg) brightness(102%) contrast(101%);"
+                src="https://i.postimg.cc/d0Phy4CJ/folder-solid.png" alt="folder-icon">
+
+                <!-- Logo 2 -->
+                <img style="
+                    float: right;
+                    padding: 0.7vw 1.5vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/0yJ6jLbt/bitbucket-brands.png" alt="bitbucket">
+
+                <!-- Logo 3 -->
+                <img style="
+                    float: right;
+                    color: #ccd6f6;
+                    padding: 0.8vw 1vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/5NyQdH1W/gitlab-brands.png" alt="gitlab">
+
+                <!-- Title Content -->
+                <h4 style="
+                    float: left;
+                    color: #ccd6f6;
+                    margin-top: 0;
+                    padding-left: 1.5vw;
+                    font-size: 2vw;
+                    margin-bottom: 0;
+                ">
+                Cookies Website Landing Page
+                </h4>
+
+                <!-- Content -->
+                <p style="
+                    float: left;
+                    font-size: 1.2vw;
+                    line-height: 2vw;
+                    margin: 1.5vw 6vw 0.5vw 1.5vw;
+                    width: 19vw;
+                ">
+                Creating Cookies website with HTML CSS
+                </p>
+
+                <!-- Type -->
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 1.4vw 0vw 3vw 1.5vw;">HTML</span>
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 1.4vw 0vw 3vw 1.5vw;">CSS</span>
+            </div>
+
+            <!-- Table 3 -->
+            <div style="
+                background-color: #112240;
+                color: #ccd6f6;
+                margin-right: 1vw;
+                width: 27vw;
+            ">
+
+                <!-- Logo 1 -->
+                <img style="
+                float: left;
+                padding: 0.7vw 15vw 1vw 1.5vw;
+                width: 2vw;
+                height: 2vw;
+                filter: invert(82%) sepia(37%) saturate(569%)
+                        hue-rotate(103deg) brightness(102%) contrast(101%);"
+                src="https://i.postimg.cc/d0Phy4CJ/folder-solid.png" alt="folder-icon">
+
+                <!-- Logo 2 -->
+                <img style="
+                    float: right;
+                    padding: 0.7vw 1.5vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/0yJ6jLbt/bitbucket-brands.png" alt="bitbucket">
+
+                <!-- Logo 3 -->
+                <img style="
+                    float: right;
+                    color: #ccd6f6;
+                    padding: 0.8vw 1vw 1vw 0;
+                    width: 2vw;
+                    height: 2vw;
+                    filter: invert(79%) sepia(3%) saturate(5759%) 
+                            hue-rotate(193deg) brightness(78%) contrast(68%);"
+                src="https://i.postimg.cc/5NyQdH1W/gitlab-brands.png" alt="gitlab">
+
+                <!-- Title Content -->
+                <h4 style="
+                    float: left;
+                    color: #ccd6f6;
+                    margin-top: 0;
+                    padding-left: 1.5vw;
+                    font-size: 2vw;
+                    margin-bottom: 0;
+                ">
+                Simple Folio
+                </h4>
+
+                <!-- Content -->
+                <p style="
+                    float: left;
+                    font-size: 1.2vw;
+                    line-height: 2vw;
+                    margin: 1.5vw 6vw 1.7vw 1.5vw;
+                    width: 19vw;
+                ">
+                Creating Fork with simplefolio repository
+                </p>
+
+                <!-- Type -->
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 0vw 0vw 3vw 1.5vw;">HTML</span>
+                <span style="float: left; font-size:1vw; color:#8892b0; margin: 0vw 0vw 3vw 1.5vw;">CSS</span>
             </div>
         </div>
+
+        <!-- More Project -->
+        <a href="./project.html"
+        style="
+            float: right;
+            font-size: 1.2vw ;
+            font-weight: bold;
+            text-decoration: none;
+            border: solid 1px #64ffda;
+            color: #64ffda;
+            width: fit-content;
+            padding: 1vw 7vw;
+            margin : 1vw 7.6vw 0 0;
+        ">More
+        </a>
     </div>
-    <!-- content1 -->
-    <div style="
-        position: absolute;
-        float:left; 
-        display: flex;
-        margin: 24.8vw 0vw 0vw 6vw; 
-        height: fit-content; 
-        width: fit-content ;
-        left: 1vw;
-        top: 5.3vw;
-        ">
+    
+    <!-- Certificate -->
+    <div  style="margin-left: 5vw; margin-bottom: 80vw;" >
         
-        <!--Sertf 1 Desc-->
-        <img src="/assets/bio/js.jpg" alt="js" style="display: flex; width: 41vw; height: 25vw; Opacity: 0.5;">
+        <!--Title Certificate -->
+        <h2 style="font-size: 2vw; padding-bottom: 1vw;">
+            <span style="color: #64ffda; float: left;
+            ">3.</span><span style="color: #ccd6f6; float: left;">Certificate</span>
+            <div style="
+                float: left;
+                border-top: 1px solid #ccd6f6;
+                height: 2px;
+                width : 60vw;
+                margin: 1.25% 1%;
+                ">
+            </div>
+        </h2>
         
-        
-            <div style="display:flex; flex-direction:column; background-color: #112240; margin: 1vw 0vw 0vw -5vw; width: 41vw ;height: 23vw; z-index: 0;  color: #CCD6F6;">
-                
-                <span style="
-                    margin: 2.4vw 2.1vw 0.1vw 2.1vw; 
-                    font-weight:100; 
-                    font-size: 1.3vw; 
-                    width: fit-content;
-                    ">Certified Javascript Basic | BASIC JS
-                </span> 
-                
-                <span style="
+        <!-- Table Certificate -->
+        <div style="margin: 3vw 0 3vw 2vw">
+
+            <!-- Certificate 1 -->
+            <div style="
+                float:left; 
+                display: flex;
+                height: fit-content; 
+                width: fit-content ;
+                left: 1vw;
+                top: 5.3vw;
+                margin-bottom: 2vw;
+            ">
+
+                <!-- Certificate Image -->
+                <img src="./assets/bio/js.jpg" alt="exp1"
+                style="
+                    display: flex;
+                    width: 43vw;
+                    height: 24vw; 
+                    Opacity: 0.5;
+                ">
+
+                <!-- Certificate Card -->
+                <div style="
+                    display:flex;
+                    flex-direction:column; 
+                    background-color: #112240; 
+                    margin: 2vw 0vw 0vw -5vw; 
+                    width: 45vw ;
+                    height: 21vw; 
+                    z-index: 0; 
+                    color: #ccd6f6;
+                ">
+
+                    <!-- Title Content -->
+                    <span style="
+                        margin: 2vw 2.1vw 0.1vw 2.1vw;
+                        font-weight:100;
+                        font-size: 1.6vw;
+                        width: fit-content;
+                    ">Certified Javascript Basic | BASIC JS</span> 
+
+                    <!-- Content -->
+                    <span style="
                         margin: 1vw 2.1vw 2.1vw 2.1vw;
                         font-size: 1.2vw; 
                         line-height: 1.9vw; 
@@ -119,141 +523,120 @@
                     JavaScript is no longer only used in browsers, but can also run on servers.This means JavaScript 
                     is used throughout the website, from the front-end to the back-end.
                     </span>
+                </div>
             </div>
-    </div>
-    
-    
-    <!-- content2 -->
-    <div style="
-        position: absolute;
-        float:right; 
-        display: flex;
-        margin: 54vw 0vw 0vw 6vw; 
-        height: fit-content; 
-        width: fit-content ;
-        left: 1vw;
-        top: 5.3vw;
-        ">
+            
+            <!-- Certificate 2 -->
+            <div style="
+                float:left; 
+                display: flex;
+                height: fit-content; 
+                width: fit-content ;
+                left: 1vw;
+                top: 5.3vw;
+                margin-bottom: 2vw;
+                
+            ">
 
-        <!--Sertf 2 Desc-->
-        <img src="/assets/bio/git.jpg" alt="git" style="display: flex; order: 1; width: 41vw; height: 25vw; Opacity: 0.5;">
-        
-        
-            <div style="display:flex; flex-direction:column; background-color: #112240; margin: 1vw -5vw 0vw 6vw; width: 41vw ;height: 23vw; z-index:0 ; color: #CCD6F6;">
-                
-                <span style="
-                    margin: 2.4vw 2.1vw 0.1vw 2.1vw; 
-                    font-weight:100; 
-                    font-size: 1.3vw; 
-                    width: fit-content;
-                    ">GIT And GITHUB Learning | GIT
-                </span> 
-                
-                <span style="
+                <!-- Certificate Image -->
+                <img src="./assets/bio/git.jpg" alt="git"
+                style="
+                    display: flex;
+                    width: 43vw;
+                    height: 24vw; 
+                    Opacity: 0.5;
+                ">
+
+                <!-- Certificate Card -->
+                <div style="
+                    display:flex;
+                    flex-direction:column; 
+                    background-color: #112240; 
+                    margin: 2vw 0vw 0vw -5vw; 
+                    width: 45vw ;
+                    height: 21vw; 
+                    z-index: 0; 
+                    color: #ccd6f6;
+                ">
+
+                    <!-- Title Content -->
+                    <span style="
+                        margin: 2vw 2.1vw 0.1vw 2.1vw;
+                        font-weight:100;
+                        font-size: 1.6vw;
+                        width: fit-content;
+                    ">GIT And GITHUB Learning | GIT </span> 
+
+                    <!-- Content -->
+                    <span style="
                         margin: 1vw 2.1vw 2.1vw 2.1vw;
                         font-size: 1.2vw; 
                         line-height: 1.9vw; 
                         width: fit-content;
                     ">
-                    JavaScript is a programming language that must be mastered by a web developer. 
-                    This language was originally used to make a website more interactive. In its development, 
-                    JavaScript is no longer only used in browsers, but can also run on servers.This means JavaScript 
-                    is used throughout the website, from the front-end to the back-end.
+                    This class is for developers who want to learn how to manage code or data using Git 
+                    with GitHub in order to collaborate with other developers according to industry standards.
+                    At the end of the class, students can manage their own datasets or code in the GitHub 
+                    repository, and can collaborate with other developers on the same repository.
                     </span>
+                </div>
             </div>
-    </div>
-    
-    <!-- content3 -->
-    <div style="
-        position: absolute;
-        float:right; 
-        display: flex;
-        margin: 83.4vw 0vw 0vw 6vw; 
-        height: fit-content; 
-        width: fit-content ;
-        left: 1vw;
-        top: 5.3vw;
-        ">
+        </div>
 
-        <!--Sertf 3 Desc-->
-        <img src="/assets/bio/logic.jpg" alt="logic" style="display: flex; order: 0; width: 41vw; height: 25vw; Opacity: 0.5;">
-        
-        
-            <div style="display:flex; flex-direction:column; background-color: #112240; margin: 1vw 0vw 0vw -5vw; width: 41vw ;height: 23vw; z-index:0 ; color: #CCD6F6;">
-                
-                <span style="
-                    margin: 2.4vw 2.1vw 0.1vw 2.1vw; 
-                    font-weight:100; 
-                    font-size: 1.3vw; 
-                    width: fit-content;
-                    ">Introduction to Programming Logic | LOGIC
-                </span> 
-                
-                <span style="
-                        margin: 1vw 2.1vw 2.1vw 2.1vw;
-                        font-size: 1.2vw; 
-                        line-height: 1.9vw; 
-                        width: fit-content;
-                    ">
-                    Classes are intended for beginners who want to start learning logic in the programming 
-                    field with reference to industry standards. At the end of the class, students can 
-                    understand basic programming logic and apply it in solving problems that exist in 
-                    the Software Developer field of work.
-                    </span>
-            </div>
+        <!-- More Certificate -->
+        <a href="./certificate.html"
+        style="
+            float: right;
+            font-size: 1.2vw ;
+            text-decoration: none;
+            border: solid 1px #64ffda;
+            color: #64ffda;
+            width: fit-content;
+            padding: 1vw 7vw;
+            margin : 1vw 7.6vw 0 0;
+        ">More
+        </a>
     </div>
+    <footer>
+        <div style="text-align: center;">
+            <h1 style="
+                font-size: 5vw;
+                color: #64ffda;
+                margin-top: 1vw;
+            ">
+            WHAT'S NEXT?
+            </h1>
+            <P style="
+                font-size: 1.2vw;
+                width: 35%;
+                margin-top: 0;
+                margin-bottom: 3vw;
+                transform: translate(92%, 0);
+            ">
+            please send a message 
+            on contact person , to find
+            out or recruit me to your team
+            </P>
 
-    <!-- content4 -->
-    <div style="
-        position: absolute;
-        float:right; 
-        display: flex;
-        margin: 112.4vw 0vw 0vw 6vw; 
-        height: fit-content; 
-        width: fit-content ;
-        left: 1vw;
-        top: 5.3vw;
-        ">
-    
-        <!--Sertf 4 Desc-->
-        <img src="/assets/bio/daspro.jpg" alt="daspro"  style="display: flex; order: 1; width: 41vw; height: 25vw; Opacity: 0.5;">
-        
-        
-            <div style="display:flex; flex-direction:column; background-color: #112240; margin: 1vw -5vw 0vw 6vw; width: 41vw ;height: 23vw; z-index:0 ; color: #CCD6F6;">
-                
-                <span style="
-                    margin: 2.4vw 2.1vw 0.1vw 2.1vw; 
-                    font-weight:100; 
-                    font-size: 1.3vw; 
-                    width: fit-content;
-                    ">Programming Fundamentals | Fundamentals
-                </span> 
-                
-                <span style="
-                    margin: 0vw 2.1vw 2.1vw 2.1vw; 
-                    font-size: 1.2vw; 
-                    line-height: 1.9vw; 
-                    width: fit-content;
-                    ">
-                        software developer according to KBJI's occupational classification standards can research, 
-                        analyze, and evaluate requirements for applications. Duties include: researching, 
-                        analyzing, and evaluating requirements for existing or new software applications and 
-                        operating systems
-                </span>
-            </div>
-    </div>
-
-    <!--footer-->
-        <footer style="
-        position: absolute;
-        display: flex;
-        color:#CCD6F6;
-        font-size: 1.46vw;
-        margin: 149.4vw 0vw 0vw 0vw; 
-        height: 6vw; 
-        width: 99% ;
-        justify-content: center;
-        ">© 2022 Riky </footer> 
-    
+            <!-- Contact Me -->
+            <a href="./contact.html"
+            style="
+                font-size: 1.2vw ;
+                text-decoration: none;
+                border: solid 1px #64ffda;
+                color: #64ffda;
+                width: fit-content;
+                padding: 1vw 5vw;
+                margin : 5vw 0; 
+            ">Go to Contact ?
+            </a>
+            <p style="
+                margin: 10vw 0 5vw 0;
+                font-size: 1.2vw;
+            ">
+            © 2021 Riky
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
